@@ -1,0 +1,13 @@
+// Path to Bootstrap could be less hacky
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Local SCSS files
+@import '_body';
+@import '_header';
+@import '_footer';
+
+
+// Post import SASS definitions
+a {
+	width: 100px;
+}
