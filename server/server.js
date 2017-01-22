@@ -14,6 +14,9 @@ app.get('/', function (req, res) {
 	res.sendFile('index.html');
 });
 
-app.listen(3000, function () {
+// Enables Heroku Outbound or 3000 local port
+var port = process.env.PORT || 3000;
+
+app.listen(port, function () {
   console.log('Example app listening on port 3000!');
 });
