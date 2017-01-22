@@ -5,20 +5,20 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "minify-css": "minify client/stylesheets/css/styles.css",
-    "watch-sass": "nodemon -e scss --watch client/stylesheets/scss -x 'npm run build-sass && npm run minify-css'",
-    "build-sass": "node-sass client/stylesheets/scss/main.scss client/stylesheets/css/styles.css",
+    "minify-css": "minify public/stylesheets/css/styles.css",
+    "watch-sass": "nodemon -e scss --watch public/stylesheets/scss -x 'npm run build-sass && npm run minify-css'",
+    "build-sass": "node-sass public/stylesheets/scss/main.scss public/stylesheets/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Renaud Vincent",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "express": "^4.14.0",
-    "nodemon": "^1.11.0"
+    "express": "^4.14.0"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "minifier": "^0.8.0",
-    "node-sass": "^4.3.0"
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0"
   }
 }

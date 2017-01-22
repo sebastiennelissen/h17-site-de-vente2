@@ -10,7 +10,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, '/../public')));
 
 app.get('/', function (req, res) {
-	// Can call directly index.html because of express.static
+	// Can send directly index.html because of express.static
 	res.sendFile('index.html');
 });
 
