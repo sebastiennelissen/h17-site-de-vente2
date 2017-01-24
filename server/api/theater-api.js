@@ -1,3 +1,9 @@
-/**
- * Created by Max Champ on 2017-01-23.
- */
+var express = require('express');
+var router = express.Router();
+
+// Define the home page route
+router.get('/theater', function(req, res) {
+    res.json({'test': 'theater'})
+});
+
+module.exports = router;

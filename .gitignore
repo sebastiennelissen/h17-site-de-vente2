@@ -5,3 +5,4 @@ npm-debug.log*
 # Optional npm cache directory
 .npm
 node_modules/
+.idea/
