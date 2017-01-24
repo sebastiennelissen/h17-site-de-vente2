@@ -1,3 +1,64 @@
-header {
+$header-height: 70px;
+
+:host {
 	color: #fff;
+}
+
+header {
+	height: $header-height;
+	background-color: grey;
+	box-shadow: 0px 3px 4px #262626;
+
+	.left {
+		height: $header-height;
+
+		.logo {
+			display: inline;
+			font-size: 30px;
+			padding-right: 20px;
+		}
+
+		.search-group {
+			display: inline-block;
+			margin-top: 14px;
+
+			input {
+				display: inline-block;
+				width: 300px;
+				vertical-align: bottom;
+			}
+			.search-icon {;
+				color: #ffffff;
+				padding: 5px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.right {
+		display: flex;
+		justify-content: flex-end;
+		height: $header-height;
+
+		.header-link {
+			color: #ffffff;
+			font-size: 22px;
+			margin: auto 0;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		.cart {
+			color: #ffffff;
+			margin: 15px 0px;
+			padding: 0px 20px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }
