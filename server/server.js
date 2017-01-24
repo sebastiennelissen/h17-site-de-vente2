@@ -16,6 +16,11 @@ app.get('/', function (req, res) {
 	res.sendFile('index.html');
 });
 
+app.get('/doc', function (req, res) {
+    // Can send directly index.html because of express.static
+    res.sendFile('index.html', { root: __dirname + '/../public/apidoc'});
+});
+
 // Enables Heroku Outbound or 3000 local port
 var port = process.env.PORT || 3000;
 
