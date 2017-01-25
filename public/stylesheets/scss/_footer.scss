@@ -1,3 +1,19 @@
+@import "body";
+$text-color: #555;
+$text-color-rgba: rgba(85,85,85,.5);
+
 footer {
-	background: #000;
+	display: flex;
+	justify-content: center;
+	background: none;
+	border-top: 1px solid $text-color-rgba;
+	margin: 40px auto 0px auto;
+	padding: 10px 0px;
+	height: 40px;
+	width: 86%;
+
+	a {
+		color: $text-color;
+		font-size: 14px;
+	}
 }
