@@ -5,22 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets/css/styles.min.css">
 	<!-- TODO remove la ligne dessous c'est juste pour dev -->
 	<link rel="stylesheet" type="text/css" href="/stylesheets/css/styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<header>
-		<div class="col-md-8 left">
-			<div class="logo">LOGO ICI</div>
-				<div class="search-group">
-					<input  class="form-control" type="text" placeholder="Search">
-					<a href="search.html"><i class="fa fa-search search-icon fa-2x" aria-hidden="true"></i></a>
-				</div>
-		</div>
-		<div class="col-md-4 right">
-			<a class="header-link" href="search.html">Home</a>
-			<i class="fa fa-shopping-cart fa-3x cart" aria-hidden="true"></i>
-		</div>
-	</header>
+    {{> header}}
 	<div class="container">
 		<div class="row">
 			<div class="slideshow">
@@ -30,7 +17,7 @@
 							<img src="images/the-1975.jpg">
 							<div class="slideshow-text">
 								<div class="date">Montreal - November 3, 1971</div>
-								<a class="title" href="">Lorem Ipsum</a>
+								<a class="title" href="/details">Lorem Ipsum</a>
 								<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis, lectus sit amet tempor imperdiet, augue orci euismod ante, in interdum dui libero at felis. Quisque augue ipsum, commodo ut sem vel, tincidunt maximus elit. Mauris finibus viverra libero, in maximus eros tempus ut. Nunc nec molestie justo, vel hendrerit tortor. Vivamus semper eu ex et varius.</div>
 							</div>
 						</div>
@@ -40,7 +27,7 @@
 							<img src="images/jean-michel.jpg">
 							<div class="slideshow-text">
 								<div class="date">Montreal - November 3, 1971</div>
-								<a class="title" href="">Lorem Ipsum</a>
+								<a class="title" href="/details">Lorem Ipsum</a>
 								<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis, lectus sit amet tempor imperdiet, augue orci euismod ante, in interdum dui libero at felis. Quisque augue ipsum, commodo ut sem vel, tincidunt maximus elit. Mauris finibus viverra libero, in maximus eros tempus ut. Nunc nec molestie justo, vel hendrerit tortor. Vivamus semper eu ex et varius.</div>
 							</div>
 						</div>
@@ -57,7 +44,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="coming-up-list">
-					<div class="coming-up-header">Coming up</div>
+					<div class="coming-up-header">À venir</div>
 					<div class="comig-up-events">
 						<div class="coming-up-container">
 							<img class="coming-up-thumbnail" src="images/the-weekend.jpg">
@@ -101,11 +88,7 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		<a href="index.html">Home</a>
-		<a href="index.html">Cart</a>
-		<a href="index.html">API</a>
-	</footer>
+    {{> footer}}
 	<script type="text/javascript">
 		$(function () {
 			var timer = setInterval(function () {
@@ -144,5 +127,6 @@
 	</script>
 	<script src="js/script.js"></script>
 	<script src="https://use.fontawesome.com/edcbf207df.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 </html>
