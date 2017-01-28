@@ -1,10 +1,11 @@
+$light-gray-background: #f2f2f2;
 $thumbnail-height: 125px;
 $thumbnail-width: 215px;
 $text-color: #555;
 $text-color-rgba: rgba(85,85,85,.5);
 
 .coming-up-list {
-  background-color: #f2f2f2;
+  background-color: $light-gray-background;
   width: 100%;
   margin-left: -15px;
   margin-top: 40px;
@@ -46,7 +47,9 @@ $text-color-rgba: rgba(85,85,85,.5);
         padding: 5px 10px 10px 10px;
 
         .title {
+          color: $text-color;
           font-size: 20px;
+          text-decoration: none;
 
           &:hover {
             cursor: pointer;

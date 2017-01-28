@@ -8,8 +8,32 @@
 </head>
 <body>
     {{> header}}
-        <div class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="details-thumbnail" src="images/the-1975.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="details-text">
+                        <div class="details-title">Lorem ipsum</div>
+                        <div class="group"><i class="fa fa-clock-o" aria-hidden="true"></i><div class="details-date">November 3, 1971 - 17h00</div></div>
+                        <div class="group"><i class="fa fa-map-marker" aria-hidden="true"></i><div class="details-location">84 Rue Sainte-Catherine O, Montréal, QC</div></div>
+                        <div class="details-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis, lectus sit amet tempor imperdiet, augue orci euismod ante, in interdum dui libero at felis. Quisque augue ipsum, commodo ut sem vel, tincidunt maximus elit. Mauris finibus viverra libero, in maximus eros tempus ut. Nunc nec molestie justo, vel hendrerit tortor. Vivamus semper eu ex et varius.</div>
+                    </div>
+                    <div class="purchase-tickets">
+                        <div class="title">Billet Régulier</div>
+                        <div class="button-group ">
+                            <div class="price">68$</div>
+                            <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
     {{> footer}}
-<script src="https://use.fontawesome.com/edcbf207df.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjau3QyVhrw0Xov68UCN1_qKAZXV_UJdc&callback=initMap" async defer></script>
+    <script src="js/map.js"></script>
+    <script src="https://use.fontawesome.com/edcbf207df.js"></script>
 </body>
 </html>

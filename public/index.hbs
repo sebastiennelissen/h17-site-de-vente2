@@ -14,7 +14,7 @@
 				<ul>
 					<li>
 						<div class="images-preview">
-							<img src="images/the-1975.jpg">
+							<a href="/details"><img src="images/the-1975.jpg"></a>
 							<div class="slideshow-text">
 								<div class="date">Montreal - November 3, 1971</div>
 								<a class="title" href="/details">Lorem Ipsum</a>
@@ -24,7 +24,7 @@
 					</li>
 					<li>
 						<div class="images-preview">
-							<img src="images/jean-michel.jpg">
+                            <a href="/details"><img src="images/jean-michel.jpg"></a>
 							<div class="slideshow-text">
 								<div class="date">Montreal - November 3, 1971</div>
 								<a class="title" href="/details">Lorem Ipsum</a>
@@ -47,25 +47,25 @@
 					<div class="coming-up-header">À venir</div>
 					<div class="comig-up-events">
 						<div class="coming-up-container">
-							<img class="coming-up-thumbnail" src="images/the-weekend.jpg">
+                            <a href="/details"><img class="coming-up-thumbnail" src="images/the-weekend.jpg"></a>
 							<div class="info">
-								<div class="title">Lorem Ipsum</div>
+								<a href="/details" class="title">Lorem Ipsum</a>
 								<div class="date">November 3, 1971</div>
 								<div class="location">Montreal</div>
 							</div>
 						</div>
 						<div class="coming-up-container">
-							<img class="coming-up-thumbnail" src="images/bond.jpg">
+                            <a href="/details"><img class="coming-up-thumbnail" src="images/bond.jpg"></a>
 							<div class="info">
-								<div class="title">Lorem Ipsum</div>
+                                <a href="/details" class="title">Lorem Ipsum</a>
 								<div class="date">November 3, 1971</div>
 								<div class="location">Montreal</div>
 							</div>
 						</div>
 						<div class="coming-up-container">
-							<img class="coming-up-thumbnail" src="images/the-weekend.jpg">
+                            <a href="/details"><img class="coming-up-thumbnail" src="images/the-weekend.jpg"></a>
 							<div class="info">
-								<div class="title">Lorem Ipsum</div>
+								<a href="/details" class="title">Lorem Ipsum</a>
 								<div class="date">November 3, 1971</div>
 								<div class="location">Montreal</div>
 							</div>
@@ -89,44 +89,9 @@
 		</div>
 	</div>
     {{> footer}}
-	<script type="text/javascript">
-		$(function () {
-			var timer = setInterval(function () {
-				$(".slideshow-text").fadeOut('slow');
-				$(".slideshow ul").fadeOut('slow', function () {
-					$(this).find("li:last").after($(this).find("li:first"));
-				});
-				$(".slideshow ul").fadeIn('slow');
-				$(".slideshow-text").fadeIn();
-			}, 6200);
-
-			$('.right').click(function () {
-				clearInterval(timer);
-				$(".slideshow-text").fadeOut('slow');
-				$(".slideshow ul").fadeOut('slow', function () {
-					$(this).find("li:last").after($(this).find("li:first"));
-				});
-				$(".slideshow ul").fadeIn('slow');
-				$(".slideshow-text").fadeIn();
-			});
-
-			$('.left').click(function () {
-				clearInterval(timer);
-				$(".slideshow-text").fadeOut('slow');
-				$(".slideshow ul").fadeOut('slow', function () {
-					$(this).find("li:first").before($(this).find("li:last"));
-				});
-				$(".slideshow ul").fadeIn('slow');
-				$(".slideshow-text").fadeIn();
-			});
-		});
-
-		$(".slideshow").css('height', $(".slideshow").height());
-		$(".images-preview").css('height', $(".slideshow").height());
-
-	</script>
-	<script src="js/script.js"></script>
-	<script src="https://use.fontawesome.com/edcbf207df.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/slide-show.js"></script>
+	<script src="https://use.fontawesome.com/edcbf207df.js"></script>
 </body>
 </html>
