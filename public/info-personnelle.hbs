@@ -8,7 +8,61 @@
 </head>
 <body>
     {{> header}}
-        <div class="container"></div>
+        <div class="container">
+            <div class="connection-content">
+                <div class="button-group">
+                    <button id="connect-reseau" class="btn btn-info">Se connecter avec le réseau social</button>
+                </div>
+                <p style="text-align: center">Ou</p>
+                <form>
+                    <div class="line-item">
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="Prénom">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="Nom">
+                            </div>
+                    </div>
+                    <div class="single-item">
+                        <input type="text" placeholder="Adresse">
+                    </div>
+                    <div class="single-item">
+                        <input type="text" placeholder="# App">
+                    </div>
+                    <div class="line-item">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Ville">
+                        </div>
+                        <div class="col-sm-6">
+                            <select>
+                                <option>Province</option>
+                                <option>Alberta</option>
+                                <option>British Columbia</option>
+                                <option>Manitoba</option>
+                                <option>New Brunswick</option>
+                                <option>Newfoundland and Labrador</option>
+                                <option>Nova Scotia</option>
+                                <option>Ontario</option>
+                                <option>Prince Edward Island</option>
+                                <option>Quebec</option>
+                                <option>Saskatchewan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="line-item">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Code postal">
+                        </div>
+                        <div class="col-sm-6">
+                            <select>
+                                <option>Canada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a id="button-submit" href="/credit" class="btn btn-primary">Étape suivante</a>
+                </form>
+            </div>
+        </div>
     {{> footer}}
 <script src="https://use.fontawesome.com/edcbf207df.js"></script>
 </body>
