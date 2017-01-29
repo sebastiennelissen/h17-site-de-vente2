@@ -24,12 +24,20 @@
                         <div class="title">Billet Régulier</div>
                         <div class="button-group ">
                             <div class="price">68$</div>
-                            <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                            <a type="button" href="/cart" class="btn btn-primary">Ajouter au panier</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="map"></div>
+
+            <div class="row">
+                <div id="map" class="col-md-6"></div>
+                
+                <div id="calender" class="col-md-6">
+
+                </div>
+            </div>
+            
         </div>
     {{> footer}}
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjau3QyVhrw0Xov68UCN1_qKAZXV_UJdc&callback=initMap" async defer></script>
