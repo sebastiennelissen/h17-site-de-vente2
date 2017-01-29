@@ -12,9 +12,9 @@
     	<div class="row">
     		<h1>Panier</h1>
     	</div>
-    	
+
     	<div class="row">
-    		<div class="col-md-8">
+    		<div class="col-md-8 boxContent">
     			<div class="boxSpectacle clearfix">
     				<div class="boxImg pull-left">
     					<img class="coming-up-thumbnail" src="images/bond.jpg" />
@@ -28,15 +28,15 @@
 
     				<div class="boxNb pull-left">
     					<label>
-    						nombre de billet :
+    						nombre de billet : <br/>
     						<input type="text" name="" value="1" />
     					</label>
     				</div>
 
-    				<div class="boxPrice pull-left">
+    				<div class="boxPrice pull-right">
     					<p>68 $</p>
 
-    					<a href="#">Supprimer</a>
+    					<a class="btn btn-default" href="#">Supprimer</a>
     				</div>
     			</div>
 
@@ -53,15 +53,15 @@
 
     				<div class="boxNb pull-left">
     					<label>
-    						nombre de billet :
+    						nombre de billet : <br/>
     						<input type="text" name="" value="1" />
     					</label>
     				</div>
 
-    				<div class="boxPrice pull-left">
+    				<div class="boxPrice pull-right">
     					<p>68 $</p>
 
-    					<a href="#">Supprimer</a>
+    					<a class="btn btn-default" href="#">Supprimer</a>
     				</div>
     			</div>
 
@@ -78,18 +78,23 @@
 
     				<div class="boxNb pull-left">
     					<label>
-    						nombre de billet :
+    						nombre de billet : <br/>
     						<input type="text" name="" value="1" />
     					</label>
     				</div>
 
-    				<div class="boxPrice pull-left">
+    				<div class="boxPrice pull-right">
     					<p>68 $</p>
 
-    					<a href="#">Supprimer</a>
+    					<a class="btn btn-default" href="#">Supprimer</a>
     				</div>
     			</div>
 
+                <div class="boxTotal pull-right">
+                    <p>Total : <span id="montantTotal"> 204 </span>$</p>
+
+                    <a href="/checkout" class="btn btn-primary">Passer la commande</a>
+                </div>
     		</div>
 
     		<div class="col-md-4">
